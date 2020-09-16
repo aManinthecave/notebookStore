@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../img/pear1.png" type="image/x-icon" />
+    <title>The big Pear</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/scss/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="../js/main.js"></script>
+  </head>
+
+  <body class="body-products">
+    <header>
+      <nav>
+        <a class="navbar-brand-desktop" href="#">
+            <img src="../img/logo3-01.png" class="logo-desktop" alt="the-big-pear-store" />
+          </a>
+        <a class="navbar-brand" href="#">
+          <img src="../img/pear1.png" class="logo" alt="the-big-pear-store" />
+        </a>
+        <ul class="nav-links products-nav">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="assets/sections/mac.html">About</a>
+          </li>
+          <li><a href="assets/sections/dell.html">Products</a></li>
+          <li><a href="assets/sections/contacto.html">Contact</a></li>
+          <li><button class="btn-login login-mobile" data-toggle="modal" data-target="#modalLoginForm">Login</button></li>
+        </ul>
+        <a href="#"><button class="login login-desktop" data-toggle="modal" data-target="#modalLoginForm">Login</button></a>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="banner-container-contact">
+        <h1 class="h1-contact">Contact.</h1>
+    </div>
+
+    <section class="container-">
+      <div class="row">
+        <div class="col-lg-4 mb-lg-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="form-header blue accent-1">
+                <h3 class="mt-2 f_size
+                  ><i class="fas fa-envelope"></i> Write to us:</h3
+                >
+              </div>
+              <p class="dark-grey-text contact_p">We will respond as soon as possible.</p>
+
+              <div class="md-form">
+                <i class="fas fa-user prefix grey-text"></i>
+                <input type="text" id="form-name" class="form-control" />
+                <label for="form-name">Your name</label>
+              </div>
+              <div class="md-form">
+                <i class="fas fa-envelope prefix grey-text"></i>
+                <input type="text" id="form-email" class="form-control" />
+                <label for="form-email">Your email</label>
+              </div>
+              <div class="md-form">
+                <i class="fas fa-tag prefix grey-text"></i>
+                <input type="text" id="form-Subject" class="form-control" />
+                <label for="form-Subject">Subject</label>
+              </div>
+              <div class="md-form">
+                <i class="fas fa-pencil-alt prefix grey-text"></i>
+                <textarea
+                  id="form-text"
+                  class="form-control md-textarea"
+                  rows="3"
+                ></textarea>
+                <label for="form-text">Send message</label>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-dark btn-block rounded-lg"
+                  >Submit</button
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <div
+            id="map-container-section"
+            class="z-depth-1-half map-container-section mb-4 embed-responsive embed-responsive-16by12"
+            style="height: 95%"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.26483365477!2d-58.50333840832649!3d-34.61580373613966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1598306307946!5m2!1ses!2sar"
+              width="600"
+              height="450"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+              class="embed-responsive-item"
+            ></iframe>
+
+          </div>
+
+         
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small><p>&copy; Desarrollo Web 2020</p></small>
+    </footer>
+  </body>
+</html>

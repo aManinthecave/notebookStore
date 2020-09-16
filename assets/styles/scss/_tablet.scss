@@ -1,0 +1,227 @@
+@import "./vars";
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    height: 100vh;
+  }
+
+  html {
+    height: 100%;
+  }
+
+  .landing {
+    background-image: url(../img/home-desktop.png);
+    background-size: auto;
+  }
+
+  nav {
+    width: 100%;
+    padding: 0px 0%;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+  }
+
+  .logo {
+    width: 4rem;
+  }
+
+  .navbar-brand {
+    display: block;
+  }
+
+  .navbar-brand-desktop {
+    display: none;
+  }
+
+  .nav-links {
+    position: fixed;
+    right: 0px;
+    height: 100%;
+    top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    background-color: $textColorPrimary;
+    z-index: 5;
+    a {
+      color: $textColorSecondary;
+    }
+    li {
+      opacity: 0;
+    }
+  }
+
+  .login {
+    display: none;
+  }
+
+  .sign-up {
+    margin-left: 5%;
+  }
+
+  .burger {
+    display: block;
+    div {
+      background-color: $textColorSecondary;
+    }
+  }
+
+  .banner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 87vh;
+    padding: 0% 0 3% 3%;
+  }
+
+  .banner {
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+  }
+
+  .banner-container-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 37vh;
+    padding: 0% 0 3% 3%;
+  }
+
+  .h1-products {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .p-products {
+    font-size: 1rem;
+    margin-top: 0px;
+  }
+
+  .banner-products {
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+  }
+
+  .subscribe-button-container {
+    width: 100%;
+    height: auto;
+    padding: 0% 0 0% 6%;
+  }
+
+  .h1-landing {
+    font-family: $quicksand;
+    font-weight: 500;
+    font-size: 5.5rem;
+    color: $textColorPrimary;
+    margin-bottom: 3rem;
+  }
+
+  .btn-subscribe {
+    margin-top: 3rem;
+    &hover {
+      background-color: rgba(244, 247, 73, 1);
+      border: 2px solid $btnColor;
+    }
+  }
+
+  small p {
+    margin-top: 2rem;
+  }
+
+  .login {
+    display: none;
+  }
+
+  .btn-login {
+    display: block;
+    padding: 9px 40px;
+    background-color: rgba(255, 255, 0, 0);
+    color: $textColorSecondary;
+    border: 2px solid $textColorSecondary;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-bottom: 40px;
+    &:hover {
+      color: $textColorPrimary;
+      background-color: $btnColor;
+      border: 2px solid $btnColor;
+    }
+  }
+
+  .card- {
+    grid-column-end: span 6;
+  }
+
+  main {
+    grid-gap: 30px;
+  }
+
+  footer {
+    height: 6rem;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle {
+  .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+    background-color: $burgerColor;
+  }
+  .line2 {
+    opacity: 0;
+    background-color: $burgerColor;
+  }
+  .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+    background-color: $burgerColor;
+  }
+}
+
+.nav-color {
+  background-color: $textColorPrimary;
+}
+
+.brand-color {
+  color: $textColorSecondary;
+}
+
+.footer-none {
+  display: none;
+  color: $textColorPrimary;
+}
+
+.hide-products {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.hide-banner {
+  display: none;
+}
+
+.hide-banner-main {
+  display: none;
+}

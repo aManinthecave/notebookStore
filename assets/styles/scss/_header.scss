@@ -1,0 +1,80 @@
+@import './vars';
+
+@mixin flexAround {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav {
+  @include flexAround();
+  align-items: center;
+  min-height: 8vh;
+  padding: 20px 0%;
+  transition: all 0.9s ease;
+}
+
+.navbar-brand {
+  display: none;
+}
+
+.logo-desktop {
+  width: 8rem;
+}
+
+.logo {
+  transition: all 0.9s ease;
+}
+
+.navbar-brand {
+  font-family: $quicksand;
+}
+
+.nav-links {
+  @include flexAround();
+  width: 40%;
+  font-family: $montserrat;
+  list-style: none;
+  a {
+    color: $textColorPrimary;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      color: $btnColor;
+    }
+  }
+}
+
+.products-nav a {
+  color: $textColorSecondary;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  div {
+    width: 25px;
+    height: 3px;
+    background-color: $textColorPrimary;
+    margin: 5px;
+    transition: all 0.5s ease;
+  }
+}
+
+.login-desktop {
+  padding: 9px 25px;
+  background-color: rgba(244, 247, 73, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    background-color: rgba(244, 247, 73, 0.8);
+  }
+}
+
+.login-mobile {
+  display: none;
+}

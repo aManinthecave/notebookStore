@@ -1,0 +1,26 @@
+@import './header';
+
+@media screen and (max-width: 992px) {
+    .nav-links {
+      @include flexAround();
+      width: 50%;
+    }
+  
+    .banner-container {
+      padding: 10% 0 0 3%;
+    }
+  
+    .banner {
+      width: 38rem;
+      height: 20rem;
+    }
+  
+    .h1-landing {
+      font-size: 5rem;
+    }
+  
+    .p-landing {
+      font-size: 0.9rem;
+    }
+  
+  }

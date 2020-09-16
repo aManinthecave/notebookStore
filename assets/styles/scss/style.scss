@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+.landing {
+  background-image: url(../../img/home-desktop.png);
+  background-size: cover;
+  min-height: 100%;
+}
+
+.body-products {
+  background-image: url(../../img/fondo--.png);
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100%;
+}
+
+.container- {
+  height: auto;
+}
+
+@import "./vars";
+@import "./header";
+@import "./banner";
+@import "./card-products";
+@import "./footer";
+@import "./laptop";
+@import "./tablet";
+@import "./mobile";

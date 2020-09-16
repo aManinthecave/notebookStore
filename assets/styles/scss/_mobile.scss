@@ -1,0 +1,54 @@
+@import "./vars";
+
+@media screen and (max-width: 500px) {
+  .logo {
+    width: 3.5rem;
+  }
+
+  .banner-container-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+    padding: 0% 0 3% 3%;
+  }
+
+  .h1-products {
+    font-family: $quicksand;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: $textColorSecondary;
+    margin-bottom: 3rem;
+  }
+
+  .banner-products {
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+  }
+
+  .hide-products {
+    display: none;
+    transition: all 0.3s ease;
+  }
+
+  .hide-banner {
+    display: none;
+    transition: all 0.3s ease;
+  }
+
+  main {
+    grid-template-columns: 10px repeat(6, 1fr) 10px;
+    grid-gap: 10px;
+  }
+
+  .cards {
+    grid-column: 2 / span 6;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+  }
+
+  .card- {
+    grid-column-end: span 3;
+  }
+}
