@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import "./vars";
 
 * {
   margin: 0px;
@@ -9,16 +10,28 @@
 }
 
 .landing {
-  background-image: url(../../img/home-desktop.png);
+  background-image: url(../../img/notebook-main.png);
   background-size: cover;
   min-height: 100%;
 }
 
 .body-products {
-  background-image: url(../../img/fondo--.png);
+  background-image: url(../../img/future5.jpg);
   background-size: cover;
   background-attachment: fixed;
   min-height: 100%;
+}
+
+.body-nosotros {
+  background-image: url(../../img/pexels-fauxels-3184398.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.body-contact {
+  background-image: url(../../img/future4.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .container- {

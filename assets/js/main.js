@@ -3,7 +3,7 @@ const navSlide = () => {
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
     const navBar = document.querySelector('nav');    
-    const products = document.querySelector('main');
+    const products = document.querySelector('.mainCont');
     const footer = document.querySelector('footer')
     const banner = document.querySelector('.banner-container-products');
 
@@ -23,6 +23,7 @@ const navSlide = () => {
         products.classList.toggle('hide-products');
         footer.classList.toggle('footer-none');
         banner.classList.toggle('hide-banner');
+        
     });
 }
 

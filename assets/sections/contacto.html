@@ -31,7 +31,7 @@
     <script defer src="../js/main.js"></script>
   </head>
 
-  <body class="body-products">
+  <body class="body-contact">
     <header>
       <nav>
         <a class="navbar-brand-desktop" href="#">
@@ -41,15 +41,15 @@
           <img src="../img/pear1.png" class="logo" alt="the-big-pear-store" />
         </a>
         <ul class="nav-links products-nav">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="../../index.html">Home</a></li>
           <li>
-            <a href="assets/sections/mac.html">About</a>
+            <a href="nosotros.html">Nosotros</a>
           </li>
-          <li><a href="assets/sections/dell.html">Products</a></li>
-          <li><a href="assets/sections/contacto.html">Contact</a></li>
-          <li><button class="btn-login login-mobile" data-toggle="modal" data-target="#modalLoginForm">Login</button></li>
+          <li><a href="products.html">Productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><button class="btn-login login-mobile" data-toggle="modal" data-target="#modalLoginForm">Acceder</button></li>
         </ul>
-        <a href="#"><button class="login login-desktop" data-toggle="modal" data-target="#modalLoginForm">Login</button></a>
+        <a href="#"><button class="login login-desktop" data-toggle="modal" data-target="#modalLoginForm">Acceder</button></a>
         <div class="burger">
           <div class="line1"></div>
           <div class="line2"></div>
@@ -58,36 +58,36 @@
       </nav>
     </header>
 
-    <div class="banner-container-contact">
-        <h1 class="h1-contact">Contact.</h1>
+    <div class="contact-cont">
+        <h1 class="h1-contact">Contacto</h1>
     </div>
 
-    <section class="container-">
+    <section class="container- mainCont">
       <div class="row">
         <div class="col-lg-4 mb-lg-6 mb-4">
           <div class="card">
             <div class="card-body">
               <div class="form-header blue accent-1">
                 <h3 class="mt-2 f_size
-                  ><i class="fas fa-envelope"></i> Write to us:</h3
+                  ><i class="fas fa-envelope"></i> Mandanos tu consulta:</h3
                 >
               </div>
-              <p class="dark-grey-text contact_p">We will respond as soon as possible.</p>
+              <p class="dark-grey-text contact_p">Te responderemos lo más pronto posible.</p>
 
               <div class="md-form">
                 <i class="fas fa-user prefix grey-text"></i>
                 <input type="text" id="form-name" class="form-control" />
-                <label for="form-name">Your name</label>
+                <label for="form-name">Tu nombre</label>
               </div>
               <div class="md-form">
                 <i class="fas fa-envelope prefix grey-text"></i>
                 <input type="text" id="form-email" class="form-control" />
-                <label for="form-email">Your email</label>
+                <label for="form-email">Tu email</label>
               </div>
               <div class="md-form">
                 <i class="fas fa-tag prefix grey-text"></i>
                 <input type="text" id="form-Subject" class="form-control" />
-                <label for="form-Subject">Subject</label>
+                <label for="form-Subject">Asunto</label>
               </div>
               <div class="md-form">
                 <i class="fas fa-pencil-alt prefix grey-text"></i>
@@ -96,18 +96,18 @@
                   class="form-control md-textarea"
                   rows="3"
                 ></textarea>
-                <label for="form-text">Send message</label>
+                <label for="form-text">Tu mensaje</label>
               </div>
               <div class="text-center">
                 <button class="btn btn-dark btn-block rounded-lg"
-                  >Submit</button
+                  >Enviar</button
                 >
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-8">
+        <div id="map" class="col-lg-8">
           <div
             id="map-container-section"
             class="z-depth-1-half map-container-section mb-4 embed-responsive embed-responsive-16by12"
@@ -124,16 +124,45 @@
               tabindex="0"
               class="embed-responsive-item"
             ></iframe>
-
           </div>
-
-         
         </div>
       </div>
     </section>
 
+    <!--Modal Login-->
+    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header text-center">
+      <h4 class="modal-title w-100 font-weight-bold">Iniciar sesión</h4>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body mx-3">
+      <div class="md-form mb-5">
+        <i class="fas fa-envelope prefix grey-text"></i>
+        <input type="email" id="defaultForm-email" class="form-control validate">
+        <label data-error="wrong" data-success="right" for="defaultForm-email">Correo Electrónico</label>
+      </div>
+
+      <div class="md-form mb-4">
+        <i class="fas fa-lock prefix grey-text"></i>
+        <input type="password" id="defaultForm-pass" class="form-control validate">
+        <label data-error="wrong" data-success="right" for="defaultForm-pass">Contraseña</label>
+      </div>
+
+    </div>
+    <div class="modal-footer d-flex justify-content-center">
+      <button class="btn btn-dark btn-block">Entrar</button>
+    </div>
+  </div>
+</div>
+</div>
+
     <footer class="footer">
-      <small><p>&copy; Desarrollo Web 2020</p></small>
+      <small><p></p></small>
     </footer>
   </body>
 </html>

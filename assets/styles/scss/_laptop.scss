@@ -5,6 +5,11 @@
       @include flexAround();
       width: 50%;
     }
+
+    .landing {
+      background-image: url(../../img/pexels-junior-teixeira-2047hh905.png);
+      background-size: cover;
+    }
   
     .banner-container {
       padding: 10% 0 0 3%;
@@ -21,6 +26,19 @@
   
     .p-landing {
       font-size: 0.9rem;
+    }
+
+    #map {
+      height: 60vh;
+    }
+
+    .container- {
+      padding: 0px 3% 7% 3%;
+    }
+
+    .contact-cont {
+      height: 21vh;
+      padding: 2% 0 0 3%;
     }
   
   }

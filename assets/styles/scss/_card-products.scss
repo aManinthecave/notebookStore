@@ -1,6 +1,6 @@
 @import './vars';
 
-main {
+.main {
     display: grid;
     grid-template-columns: 0.5fr repeat(12, minmax(auto, 60px)) 0.5fr;
     grid-row: 40px;
@@ -10,7 +10,7 @@ main {
   
   .text--info {
     font-family: $montserrat;
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 20px;
     color: $textColorSecondary;
   }
@@ -19,7 +19,10 @@ main {
   }
   
   h6.text--info {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
+    &:hover {
+      color: $btnColor;
+    }
   }
   
   .cards {

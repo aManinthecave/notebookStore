@@ -1,6 +1,12 @@
 @import "./vars";
 
 @media screen and (max-width: 500px) {
+  .landing {
+    background-image: url(../../img/pexels-junior-teixeira-2047905.jpg);
+    background-size: cover;
+    min-height: 100%;
+  }
+
   .logo {
     width: 3.5rem;
   }
@@ -13,6 +19,15 @@
     padding: 0% 0 3% 3%;
   }
 
+  .banner-container {
+    height: 76.1vh;
+    padding: 10% 0 0 3%;
+  }
+
+  .nosotros-banner {
+    height: 60vh;
+  }
+
   .h1-products {
     font-family: $quicksand;
     font-weight: 500;
@@ -21,6 +36,18 @@
     margin-bottom: 3rem;
   }
 
+  .h1-landing {
+    font-size: 4rem;
+    color: $textColorSecondary;
+  }
+  .subscribe-button-container {
+    padding: 0% 0 3% 3%;
+  }
+
+  .btn-subscribe {
+    color: $textColorSecondary;
+    border: 2px solid $textColorSecondary;
+  }  
   .banner-products {
     width: 100%;
     height: auto;
@@ -37,7 +64,7 @@
     transition: all 0.3s ease;
   }
 
-  main {
+  .main {
     grid-template-columns: 10px repeat(6, 1fr) 10px;
     grid-gap: 10px;
   }
@@ -50,5 +77,10 @@
 
   .card- {
     grid-column-end: span 3;
+  }
+
+  .contact-cont {
+    height: 18vh;
+    padding: 3% 0 0 3%;
   }
 }
