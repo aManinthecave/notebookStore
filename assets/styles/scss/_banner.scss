@@ -17,14 +17,38 @@
 }
 
 .banner-container {
-  @include banner(76.1vh);
+  @include banner(80vh);
   padding: 6% 0 0 3%;
   align-items: flex-start;
 }
 
 .banner {
+  display: flex;
   width: 38rem;
-  height: 25rem;
+  height: 20rem;
+}
+
+.typing {
+  position: relative;
+  margin-left: 20px;
+  &::after{
+    content: "";
+    position: absolute;
+    right: -10px;
+    width: 1px;
+    height: 35%;
+    border-right: 2px solid $textColorSecondary;
+    animation: blink 0.5s infinite ease;
+  }
+}
+
+@keyframes blink{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 
 .banner-container-products {
@@ -43,15 +67,6 @@
   height: auto;
 }
 
-.nosotros-banner {
-  width: 100%;
-  height: 60vh;
-  overflow: hidden;
-  img {
-    width: 100%;
-  }
-}
-
 .h1-products {
   @include h1(3rem);
   font-family: $quicksand;
@@ -62,6 +77,13 @@
   @include h1(2rem);
   font-family: $quicksand;
   color: $textColorSecondary;
+}
+
+.h1-nosotros {
+  @include h1(4rem);
+  font-family: $quicksand;
+  color: $textColorSecondary;
+  line-height: 7rem;
 }
 
 .p-products {
@@ -80,6 +102,83 @@
 .contact-cont {
   @include banner(20vh);
   padding: 2% 0 0 3%;
+}
+
+.nosotros-banner {
+  height: 70vh;
+}
+
+.banner-mid-nosotros {
+  height: auto;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  img {
+    width: 100%;
+    z-index: 4;
+    position: relative;
+  }
+  h4 {
+    z-index: 5;
+    position: absolute;
+    font-size: 2rem;
+    color: $textColorSecondary;
+  }
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 45rem;
+  margin-top: 20px;
+}
+
+.intro-title {
+  text-align: center;
+  padding: 1% 0 0 0;
+  height: 15vh;
+  margin-bottom: 1%;
+  h2 {
+    font-size: 3rem;
+    color: $textColorPrimary;
+  }
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 5%;
+  img {
+    width: 40%;
+    border-radius: 8px;
+  }
+}
+
+.intro-content-two {
+  flex-direction: row-reverse;
+}
+
+.intro-text {
+  width: 40%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s all ease-in-out;
+  padding: 2% 3% 0 3%;
+  h3 {
+    font-size: 2rem;
+    opacity: 0.6;
+  }
+  p {
+    font-size: 1.2rem;
+    opacity: 0.5;
+  }
+}
+
+.intro-appear-scroll {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 .container- {

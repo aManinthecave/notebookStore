@@ -20,12 +20,20 @@
   }
 
   .banner-container {
-    height: 76.1vh;
+    height: 88vh;
     padding: 10% 0 0 3%;
+    .banner {
+      height: 10rem;
+    }
   }
 
   .nosotros-banner {
-    height: 60vh;
+    height: 20vh;
+    h1 {
+      font-size: 1rem;
+      margin-top: 0;
+      line-height: 2rem;
+    }
   }
 
   .h1-products {
@@ -40,8 +48,15 @@
     font-size: 4rem;
     color: $textColorSecondary;
   }
+
+  .typing {
+    &::after{
+      height: 70%;
+    }
+  }
+
   .subscribe-button-container {
-    padding: 0% 0 3% 3%;
+    padding: 35% 0 3% 3%;
   }
 
   .btn-subscribe {
@@ -79,8 +94,81 @@
     grid-column-end: span 3;
   }
 
+  .card__price {
+    margin-left: auto;
+    padding: 3px 10px;
+    margin-top: 9px;
+    background-color: $cardPrimary;
+    border-radius: 20px;
+    transition: all 0.3s ease 0s;
+    &:hover {
+        background-color: $btnColor;
+        color: $cardPrimary;
+      }
+  }
+  
+  .text--info {
+    font-size: 0.4rem;
+  }
+
+  h6.text--info {
+    font-size: 0.2rem;
+  }
+
   .contact-cont {
     height: 18vh;
     padding: 3% 0 0 3%;
+  }
+
+  .intro {
+    height: 65vh;
+  }
+
+  .intro2 {
+    margin-top: 5px;
+  }
+
+  .intro-content {
+    flex-direction: column;
+    img {
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+
+  .intro-text {
+    width: 100%;
+    height: 13rem;
+    h3 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
+  .intro-text2 {
+    height: 15rem;
+  }
+
+  .intro-title {
+    height: 3rem;
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .banner-mid-nosotros {
+    .h1-nosotros {
+      margin-top: 0;
+      line-height: 1.5rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+  }
+
+  .footer {
+    height: 2rem;
   }
 }
