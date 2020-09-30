@@ -16,6 +16,12 @@
   margin-top: 30px;
 }
 
+hr {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
 .banner-container {
   @include banner(80vh);
   padding: 6% 0 0 3%;
@@ -142,6 +148,7 @@
   h2 {
     font-size: 3rem;
     color: $textColorPrimary;
+    opacity: 0.6;
   }
 }
 

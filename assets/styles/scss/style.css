@@ -51,6 +51,10 @@ video {
   height: auto;
 }
 
+.animate__animated.animate__backInUp {
+  --animate-delay: 0.9s;
+}
+
 header {
   width: 100%;
   height: auto;
@@ -150,6 +154,12 @@ nav {
 
 .login-mobile {
   display: none;
+}
+
+hr {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
 }
 
 .banner-container {
@@ -374,6 +384,7 @@ nav {
 .intro-title h2 {
   font-size: 3rem;
   color: #39393b;
+  opacity: 0.6;
 }
 
 .intro-content {
@@ -463,8 +474,8 @@ nav {
 .main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 0.5fr (minmax(auto, 60px))[12] 0.5fr;
-      grid-template-columns: 0.5fr repeat(12, minmax(auto, 60px)) 0.5fr;
+  -ms-grid-columns: 1fr (minmax(auto, 60px))[16] 1fr;
+      grid-template-columns: 1fr repeat(16, minmax(auto, 60px)) 1fr;
   -ms-grid-row: 40;
   grid-row: 40px;
   padding: 60px 0;
@@ -493,12 +504,12 @@ h6.text--info:hover {
 
 .cards {
   -ms-grid-column: 2;
-  -ms-grid-column-span: 12;
-  grid-column: 2 / span 12;
+  -ms-grid-column-span: 16;
+  grid-column: 2 / span 16;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(auto, 60px))[12];
-      grid-template-columns: repeat(12, minmax(auto, 60px));
+  -ms-grid-columns: (minmax(auto, 60px))[16];
+      grid-template-columns: repeat(16, minmax(auto, 60px));
   grid-gap: 40px;
 }
 
@@ -572,6 +583,114 @@ h6.text--info:hover {
 .card__price:hover {
   background-color: #ffff00;
   color: #303032;
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.5fr (minmax(auto, 60px))[12] 0.5fr;
+        grid-template-columns: 0.5fr repeat(12, minmax(auto, 60px)) 0.5fr;
+    -ms-grid-row: 40;
+    grid-row: 40px;
+    padding: 60px 0;
+    -webkit-transition: all 0.9s ease;
+    transition: all 0.9s ease;
+  }
+  .text--info {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    line-height: 20px;
+    color: #ecf0f1;
+  }
+  .text-info {
+    color: #a8a6a6;
+  }
+  h6.text--info {
+    font-size: 0.6rem;
+  }
+  h6.text--info:hover {
+    color: #ffff00;
+  }
+  .cards {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 12;
+    grid-column: 2 / span 12;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(auto, 60px))[12];
+        grid-template-columns: repeat(12, minmax(auto, 60px));
+    grid-gap: 40px;
+  }
+  .card- {
+    -ms-grid-column-span: 4;
+        grid-column-end: span 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #39393b;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .card-:hover {
+    -webkit-transform: translateY(-7px);
+            transform: translateY(-7px);
+  }
+  .card__image-container {
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    position: relative;
+  }
+  .card__image-container img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .card__content {
+    padding: 20px;
+  }
+  .card__title {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+  }
+  .card__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: end;
+        align-self: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card__price {
+    margin-left: auto;
+    padding: 5px 20px;
+    margin-top: 10px;
+    background-color: #303032;
+    border-radius: 20px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .card__price:hover {
+    background-color: #ffff00;
+    color: #303032;
+  }
+}
+
+hr {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
 }
 
 .banner-container {
@@ -787,6 +906,7 @@ h6.text--info:hover {
 .intro-title h2 {
   font-size: 3rem;
   color: #39393b;
+  opacity: 0.6;
 }
 
 .intro-content {
@@ -1041,7 +1161,7 @@ nav {
   display: none;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .nav-links {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1050,19 +1170,42 @@ nav {
         justify-content: space-around;
     width: 50%;
   }
+  .nav-links li a {
+    font-size: 1.2rem;
+  }
   .landing {
-    background-image: url(../../img/pexels-junior-teixeira-2047hh905.png);
+    background-image: url(../../img/notebook-main.png);
     background-size: cover;
   }
   .banner-container {
-    padding: 10% 0 0 3%;
+    height: 85vh;
+    padding: 20% 0 0 3%;
+  }
+  .banner-container-products {
+    height: 18rem;
+  }
+  .btn-subscribe {
+    padding: 17px 40px;
+    font-size: 1.7rem;
+    background-color: rgba(255, 255, 0, 0);
+    border: 2px solid #ecf0f1;
+    color: #ecf0f1;
+    border-radius: 50px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .btn-subscribe:hover {
+    background-color: #ffff00;
+    border: 2px solid #ffff00;
+    color: #39393b;
   }
   .banner {
-    width: 38rem;
-    height: 20rem;
+    width: 45rem;
+    height: 30rem;
   }
   .h1-landing {
-    font-size: 5rem;
+    font-size: 7.4rem;
   }
   .p-landing {
     font-size: 0.9rem;
@@ -1071,11 +1214,37 @@ nav {
     height: 60vh;
   }
   .container- {
+    height: 70vh;
     padding: 0px 3% 7% 3%;
   }
   .contact-cont {
-    height: 21vh;
+    height: 13rem;
     padding: 2% 0 0 3%;
+  }
+  .nosotros-banner h1 {
+    font-size: 3rem;
+  }
+  .intro {
+    height: 37rem;
+  }
+  .intro img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .intro2 {
+    height: 41rem;
+  }
+  .intro-title {
+    height: 5.2rem;
+  }
+  .banner-mid-nosotros h4 {
+    font-size: 1.7rem;
+    line-height: 3rem;
+    margin-top: 12px;
+    padding: 0 3% 0 3%;
+  }
+  .footer {
+    height: 5rem;
   }
 }
 
@@ -1088,7 +1257,7 @@ nav {
     height: 100%;
   }
   .landing {
-    background-image: url(../../img/pexels-junior-teixeira-2047hh905.png);
+    background-image: url(../../img/notebook-main.png);
     background-size: cover;
   }
   nav {
@@ -1140,6 +1309,9 @@ nav {
   }
   .nav-links li {
     opacity: 0;
+  }
+  .nav-links li a {
+    font-size: 1.2rem;
   }
   .login {
     display: none;
@@ -1207,6 +1379,9 @@ nav {
     height: auto;
     padding: 0% 0 0% 6%;
   }
+  .typing::after {
+    height: 70%;
+  }
   .h1-landing {
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
@@ -1244,6 +1419,24 @@ nav {
     background-color: #ffff00;
     border: 2px solid #ffff00;
   }
+  .h1-landing {
+    font-size: 4rem;
+    color: #ecf0f1;
+  }
+  .banner-container {
+    height: 88vh;
+    padding: 10% 0 0 3%;
+  }
+  .banner-container .banner {
+    height: 10rem;
+  }
+  .subscribe-button-container {
+    padding: 35% 0 3% 3%;
+  }
+  .btn-subscribe {
+    color: #ecf0f1;
+    border: 2px solid #ecf0f1;
+  }
   .card- {
     -ms-grid-column-span: 6;
         grid-column-end: span 6;
@@ -1253,6 +1446,42 @@ nav {
   }
   footer {
     height: 6rem;
+  }
+  .contact-cont {
+    height: 10rem;
+  }
+  .intro {
+    height: 35rem;
+  }
+  .intro-content img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .nosotros-banner h1 {
+    font-size: 2rem;
+    line-height: 5rem;
+  }
+  .intro-title {
+    height: 6rem;
+  }
+  .intro-title h2 {
+    font-size: 3rem;
+  }
+  .intro-content {
+    margin-top: 4rem;
+  }
+  .intro-text h3 {
+    font-size: 1.5rem;
+  }
+  .intro-text p {
+    font-size: 1rem;
+  }
+  .banner-mid-nosotros {
+    margin-top: 4rem;
+  }
+  .banner-mid-nosotros h4 {
+    font-size: 1.3rem;
+    margin-top: 0px;
   }
 }
 
@@ -1338,7 +1567,10 @@ nav {
     min-height: 100%;
   }
   .logo {
-    width: 3.5rem;
+    width: 2.8rem;
+  }
+  .nav-links li a {
+    font-size: 0.8rem;
   }
   .banner-container-products {
     display: -webkit-box;
@@ -1389,6 +1621,8 @@ nav {
   .btn-subscribe {
     color: #ecf0f1;
     border: 2px solid #ecf0f1;
+    padding: 5px 15px;
+    font-size: 1rem;
   }
   .banner-products {
     width: 100%;
@@ -1446,12 +1680,14 @@ nav {
     padding: 3% 0 0 3%;
   }
   .intro {
-    height: 65vh;
+    height: 31rem;
   }
   .intro2 {
-    margin-top: 5px;
+    margin-top: 8px;
+    height: 23rem;
   }
   .intro-content {
+    height: 17.2rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1475,7 +1711,7 @@ nav {
     height: 15rem;
   }
   .intro-title {
-    height: 3rem;
+    height: 2rem;
   }
   .intro-title h2 {
     font-size: 1.5rem;
@@ -1485,7 +1721,8 @@ nav {
     line-height: 1.5rem;
   }
   .banner-mid-nosotros h4 {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    padding: 0 3% 0 3%;
   }
   .footer {
     height: 2rem;

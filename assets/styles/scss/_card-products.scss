@@ -2,7 +2,7 @@
 
 .main {
     display: grid;
-    grid-template-columns: 0.5fr repeat(12, minmax(auto, 60px)) 0.5fr;
+    grid-template-columns: 1fr repeat(16, minmax(auto, 60px)) 1fr;
     grid-row: 40px;
     padding: 60px 0;
     transition: all 0.9s ease;
@@ -26,9 +26,9 @@
   }
   
   .cards {
-    grid-column: 2 / span 12;
+    grid-column: 2 / span 16;
     display: grid;
-    grid-template-columns: repeat(12, minmax(auto, 60px));
+    grid-template-columns: repeat(16, minmax(auto, 60px));
     grid-gap: 40px;
   }
   
@@ -85,5 +85,96 @@
         background-color: $btnColor;
         color: $cardPrimary;
       }
+  }
+
+  @media screen and (max-width: 1024px) {
+
+    .main {
+      display: grid;
+      grid-template-columns: 0.5fr repeat(12, minmax(auto, 60px)) 0.5fr;
+      grid-row: 40px;
+      padding: 60px 0;
+      transition: all 0.9s ease;
+    }
+    
+    .text--info {
+      font-family: $montserrat;
+      font-size: 0.8rem;
+      line-height: 20px;
+      color: $textColorSecondary;
+    }
+    .text-info {
+      color: rgb(168, 166, 166);
+    }
+    
+    h6.text--info {
+      font-size: 0.6rem;
+      &:hover {
+        color: $btnColor;
+      }
+    }
+    
+    .cards {
+      grid-column: 2 / span 12;
+      display: grid;
+      grid-template-columns: repeat(12, minmax(auto, 60px));
+      grid-gap: 40px;
+    }
+    
+    .card- {
+      grid-column-end: span 4;
+      display: flex;
+      flex-direction: column;
+      background-color: $textColorPrimary;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      &:hover {
+          transform: translateY(-7px);
+        }
+    }
+    
+    .card__image-container {
+      width: 100%;
+      padding-top: 56.25%;
+      overflow: hidden;
+      position: relative;
+      img {
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+    }
+    
+    
+    .card__content {
+      padding: 20px;
+    }
+    
+    .card__title {
+      margin-bottom: 20px;
+      font-size: 0.9rem;
+    }
+    
+    .card__info {
+      display: flex;
+      align-self: end;
+      align-items: center;
+    }
+    
+    .card__price {
+      margin-left: auto;
+      padding: 5px 20px;
+      margin-top: 10px;
+      background-color: $cardPrimary;
+      border-radius: 20px;
+      transition: all 0.3s ease 0s;
+      &:hover {
+          background-color: $btnColor;
+          color: $cardPrimary;
+        }
+    }
+
   }
   

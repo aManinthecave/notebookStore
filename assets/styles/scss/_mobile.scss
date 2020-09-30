@@ -8,7 +8,15 @@
   }
 
   .logo {
-    width: 3.5rem;
+    width: 2.8rem;
+  }
+
+  .nav-links {
+    li {
+      a {
+        font-size: 0.8rem;
+      }
+    }
   }
 
   .banner-container-products {
@@ -62,6 +70,8 @@
   .btn-subscribe {
     color: $textColorSecondary;
     border: 2px solid $textColorSecondary;
+    padding: 5px 15px;
+    font-size: 1rem;
   }  
   .banner-products {
     width: 100%;
@@ -121,14 +131,16 @@
   }
 
   .intro {
-    height: 65vh;
+    height: 31rem;
   }
 
   .intro2 {
-    margin-top: 5px;
+    margin-top: 8px;
+    height: 23rem;
   }
 
   .intro-content {
+    height: 17.2rem;
     flex-direction: column;
     img {
       width: 100%;
@@ -152,7 +164,7 @@
   }
 
   .intro-title {
-    height: 3rem;
+    height: 2rem;
     h2 {
       font-size: 1.5rem;
     }
@@ -164,7 +176,8 @@
       line-height: 1.5rem;
     }
     h4 {
-      font-size: 1rem;
+      font-size: 0.8rem;
+      padding: 0 3% 0 3%;
     }
   }
 

@@ -11,7 +11,7 @@
   }
 
   .landing {
-    background-image: url(../../img/pexels-junior-teixeira-2047hh905.png);
+    background-image: url(../../img/notebook-main.png);
     background-size: cover;
   }
 
@@ -53,6 +53,11 @@
     }
     li {
       opacity: 0;
+    }
+    li {
+      a {
+        font-size: 1.2rem;
+      }
     }
   }
 
@@ -116,6 +121,12 @@
     padding: 0% 0 0% 6%;
   }
 
+  .typing {
+    &::after{
+      height: 70%;
+    }
+  }
+
   .h1-landing {
     font-family: $quicksand;
     font-weight: 500;
@@ -157,6 +168,28 @@
     }
   }
 
+  .h1-landing {
+    font-size: 4rem;
+    color: $textColorSecondary;
+  }
+
+  .banner-container {
+    height: 88vh;
+    padding: 10% 0 0 3%;
+    .banner {
+      height: 10rem;
+    }
+  }
+
+  .subscribe-button-container {
+    padding: 35% 0 3% 3%;
+  }
+
+  .btn-subscribe {
+    color: $textColorSecondary;
+    border: 2px solid $textColorSecondary;
+  }  
+
   .card- {
     grid-column-end: span 6;
   }
@@ -168,6 +201,56 @@
   footer {
     height: 6rem;
   }
+
+  .contact-cont {
+    height: 10rem;
+  }
+
+  .intro {
+    height: 35rem;
+  }
+
+  .intro-content {
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .nosotros-banner {
+    h1 {
+      font-size: 2rem;
+      line-height: 5rem;
+    }
+  }
+
+  .intro-title {
+    height: 6rem;
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  .intro-content {
+    margin-top: 4rem;
+  }
+
+  .intro-text {
+    h3 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .banner-mid-nosotros {
+    margin-top: 4rem;
+    h4 {
+      font-size: 1.3rem;
+      margin-top: 0px;
+    }
+  }
+
 }
 
 .nav-active {

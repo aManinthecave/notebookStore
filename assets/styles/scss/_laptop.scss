@@ -1,27 +1,53 @@
 @import './header';
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
     .nav-links {
       @include flexAround();
       width: 50%;
+      li {
+        a {
+          font-size: 1.2rem;
+        }
+      }
     }
 
     .landing {
-      background-image: url(../../img/pexels-junior-teixeira-2047hh905.png);
+      background-image: url(../../img/notebook-main.png);
       background-size: cover;
     }
   
     .banner-container {
-      padding: 10% 0 0 3%;
+      height: 85vh;
+      padding: 20% 0 0 3%;
+    }
+
+    .banner-container-products {
+      height: 18rem;
+    }
+
+    .btn-subscribe {
+      padding: 17px 40px;
+      font-size: 1.7rem;
+      background-color: rgba(255, 255, 0, 0);
+      border: 2px solid $textColorSecondary;
+      color: $textColorSecondary;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      &:hover {
+        background-color: $btnColor;
+        border: 2px solid $btnColor;
+        color: $textColorPrimary;
+      }
     }
   
     .banner {
-      width: 38rem;
-      height: 20rem;
+      width: 45rem;
+      height: 30rem;
     }
   
     .h1-landing {
-      font-size: 5rem;
+      font-size: 7.4rem;
     }
   
     .p-landing {
@@ -33,12 +59,47 @@
     }
 
     .container- {
+      height: 70vh;
       padding: 0px 3% 7% 3%;
     }
 
     .contact-cont {
-      height: 21vh;
+      height: 13rem;
       padding: 2% 0 0 3%;
     }
+
+    .nosotros-banner {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+
+    .intro {
+      height: 37rem;
+      img {
+        object-fit: cover;
+      }
+    }
+
+    .intro2 {
+      height: 41rem;
+    }
   
+    .intro-title {
+      height: 5.2rem;
+    }
+
+    .banner-mid-nosotros {
+      h4 {
+        font-size: 1.7rem;
+        line-height: 3rem;
+        margin-top: 12px;
+        padding: 0 3% 0 3%;
+      }
+    }
+
+    .footer {
+      height: 5rem;
+    }
+
   }
