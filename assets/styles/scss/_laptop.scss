@@ -55,7 +55,7 @@
     }
 
     #map {
-      height: 60vh;
+      height: 43vh;
     }
 
     .container- {
@@ -65,12 +65,13 @@
 
     .contact-cont {
       height: 13rem;
-      padding: 2% 0 0 3%;
+      padding: 2% 2% 0 1%;
     }
 
     .nosotros-banner {
       h1 {
-        font-size: 3rem;
+        font-size: 2rem;
+        margin-top: 0;
       }
     }
 
@@ -91,15 +92,11 @@
 
     .banner-mid-nosotros {
       h4 {
-        font-size: 1.7rem;
+        font-size: 1rem;
         line-height: 3rem;
         margin-top: 12px;
         padding: 0 3% 0 3%;
       }
-    }
-
-    .footer {
-      height: 5rem;
     }
 
   }

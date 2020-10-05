@@ -10,13 +10,16 @@
 }
 
 .landing {
-  background-image: url(../../img/notebook-main.png);
-  background-size: cover;
   min-height: 100%;
 }
 
+.background-landing {
+  background-image: url(../../img/main.png);
+  background-size: cover;
+}
+
 .body-products {
-  background-image: url(../../img/future2.jpg);
+  background-image: url(../../img/products.jpg);
   background-size: cover;
   background-attachment: fixed;
   min-height: 100%;
@@ -42,7 +45,7 @@ video {
 }
 
 .body-contact {
-  background-image: url(../../img/future1.jpg);
+  background-image: url(../../img/contact.jpg);
   background-size: cover;
   background-attachment: fixed;
 }

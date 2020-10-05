@@ -3,7 +3,6 @@
 @mixin banner($height) {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   height: $height;
   padding: 6% 0 0 0%;
   align-items: center;
@@ -16,14 +15,8 @@
   margin-top: 30px;
 }
 
-hr {
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-}
-
 .banner-container {
-  @include banner(80vh);
+  @include banner(85vh);
   padding: 6% 0 0 3%;
   align-items: flex-start;
 }
@@ -85,13 +78,6 @@ hr {
   color: $textColorSecondary;
 }
 
-.h1-nosotros {
-  @include h1(4rem);
-  font-family: $quicksand;
-  color: $textColorSecondary;
-  line-height: 7rem;
-}
-
 .p-products {
   font-family: $quicksand;
   @include h1(1.3rem);
@@ -105,13 +91,26 @@ hr {
   color: $textColorSecondary;
 }
 
-.contact-cont {
-  @include banner(20vh);
-  padding: 2% 0 0 3%;
+.nosotros-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: $quicksand;
+    color: rgba(255, 255, 255, 0.856);
+    line-height: 7rem;
+    margin-top: 50px;
+    padding: 3% 2% 0 2%;
+    text-align: center;
+  }
 }
 
-.nosotros-banner {
-  height: 70vh;
+.contact-cont {
+  height: 13rem;
+  padding: 2% 2% 0 3%;
 }
 
 .banner-mid-nosotros {
@@ -123,12 +122,16 @@ hr {
     width: 100%;
     z-index: 4;
     position: relative;
+    
   }
   h4 {
     z-index: 5;
     position: absolute;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: $textColorSecondary;
+    font-family: $quicksand;
+    text-align: center;
+    margin-top: 30px;
   }
 }
 
@@ -136,7 +139,7 @@ hr {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 45rem;
+  height: 40rem;
   margin-top: 20px;
 }
 

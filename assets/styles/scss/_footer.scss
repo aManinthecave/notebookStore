@@ -2,40 +2,204 @@
 @import './banner';
 
 footer {
-    @include banner(2rem);
+    @include banner(25rem);
     flex-direction: row;
     justify-content: space-around;;
     padding: 0;
     width: 100%;
     background-color: #1c1c1d;
     div {
+      display: flex;
+      flex-direction: column;
       margin-left: 2%;
       margin-right: 2%;
-      
-    }
-    
-    .networks {
-      width: 3rem;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      a {
-        transition: all 0.3s ease 0s;
-        opacity: 0.5;
-        &:hover {
-          opacity: 1;
-        }
-      }
       img {
-        width: 1rem;
-        transition: all 0.3 ease;
+        width: 20px;
+      }
+    }
+    p {
+      color: $textColorSecondary;
+      a {
+      color: $textColorSecondary;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      text-decoration: none;
+        &:hover {
+        color: $burgerColor;
+        text-decoration: none;
+      }
+      }
+    }
+    input {
+      margin-bottom: 16px;
+    }
+    h3 {
+      color: $burgerColor;
+      margin-bottom: 26px;
+    }
+    .modalAcceder {
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+        &:hover {
+        color: $btnColor;
       }
     }
   }
   
-  small p {
-    font-family: $quicksand;
-    color: #ecf0f185;
-    text-align: center;
-    font-size: 1rem;
+
+  @media screen and (max-width: 1024px) {
+
+    footer {
+      @include banner(25rem);
+      flex-direction: row;
+      justify-content: space-around;;
+      padding: 0;
+      width: 100%;
+      background-color: #1c1c1d;
+      div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2%;
+        margin-right: 2%;
+        img {
+          width: 20px;
+        }
+      }
+      p {
+        font-size: 0.5rem;
+        color: $textColorSecondary;
+        a {
+        color: $textColorSecondary;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        text-decoration: none;
+          &:hover {
+          color: $burgerColor;
+          text-decoration: none;
+        }
+        }
+      }
+      input {
+        margin-bottom: 16px;
+        height: 16px;
+       &::placeholder{
+          font-size: 0.4rem;
+          line-height: 16px;
+          }
+      }
+      h3 {
+        color: $burgerColor;
+        margin-bottom: 26px;
+      }
+      .modalAcceder {
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+          &:hover {
+          color: $btnColor;
+        }
+      }
+    }
+
+  }
+
+  @media screen and (max-width: 768px) {
+
+    footer {
+      @include banner(25rem);
+      flex-direction: row;
+      justify-content: space-around;;
+      padding: 0;
+      width: 100%;
+      background-color: #1c1c1d;
+      div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2%;
+        margin-right: 2%;
+        img {
+          width: 20px;
+        }
+      }
+      p {
+        color: $textColorSecondary;
+        a {
+        color: $textColorSecondary;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        text-decoration: none;
+          &:hover {
+          color: $burgerColor;
+          text-decoration: none;
+        }
+        }
+      }
+      input {
+        margin-bottom: 16px;
+      }
+      h3 {
+        color: $burgerColor;
+        margin-bottom: 26px;
+      }
+      .modalAcceder {
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+          &:hover {
+          color: $btnColor;
+        }
+      }
+    }
+
+  }
+
+  @media screen and (max-width: 500px) {
+
+    footer {
+      @include banner(48rem);
+      flex-direction: column;
+      justify-content: space-around;;
+      padding: 0;
+      width: 100%;
+      background-color: #1c1c1d;
+      div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2%;
+        margin-right: 2%;
+        text-align: center;
+        img {
+          width: 20px;
+        }
+      }
+      p {
+        color: $textColorSecondary;
+        a {
+        color: $textColorSecondary;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        text-decoration: none;
+          &:hover {
+          color: $burgerColor;
+          text-decoration: none;
+        }
+        }
+      }
+      input {
+        margin-bottom: 16px;
+      }
+      h3 {
+        color: $burgerColor;
+        margin-bottom: 26px;
+      }
+      .modalAcceder {
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+          &:hover {
+          color: $btnColor;
+        }
+      }
+      .contactFooter {
+        margin-top: 30px;
+      }
+    }
+
   }
