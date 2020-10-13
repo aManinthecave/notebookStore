@@ -2,6 +2,10 @@
 
 @media screen and (max-width: 500px) {
 
+  .background-landing {
+    background-image: url(../../img/main-mobile.jpg);
+  }
+
   .logo {
     width: 2.8rem;
   }
@@ -24,7 +28,7 @@
 
   .banner-container {
     height: 88vh;
-    padding: 10% 0 0 3%;
+    padding: 5% 0 0 3%;
     .banner {
       height: 10rem;
     }
@@ -181,6 +185,10 @@
     img {
       object-fit: cover;
     }
+  }
+
+  .container- {
+    height: 55rem;
   }
 
 }

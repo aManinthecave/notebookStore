@@ -13,19 +13,15 @@
 }
 
 .background-landing {
-  background-image: url(../../img/main.png);
+  background-image: url(../../img/main-desktop.jpg);
   background-size: cover;
 }
 
 .body-products {
-  background-image: url(../../img/products.jpg);
+  background-image: url(../../img/products-mate.jpg);
   background-size: cover;
   background-attachment: fixed;
   min-height: 100%;
-}
-
-.body-background {
-  background-color: #39393b;
 }
 
 video {
@@ -45,7 +41,7 @@ video {
 }
 
 .body-contact {
-  background-image: url(../../img/contact.jpg);
+  background-image: url(../../img/contact-black.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -1379,8 +1375,8 @@ nav {
   .nav-links li a {
     font-size: 1.2rem;
   }
-  .landing {
-    background-image: url(../../img/notebook-main.png);
+  .background-landing {
+    background-image: url(../../img/main-tablet.jpg);
     background-size: cover;
   }
   .banner-container {
@@ -1460,8 +1456,8 @@ nav {
   html {
     height: 100%;
   }
-  .landing {
-    background-image: url(../../img/notebook-main.png);
+  .background-landing {
+    background-image: url(../../img/main-tablet.jpg);
     background-size: cover;
   }
   nav {
@@ -1762,6 +1758,9 @@ nav {
 }
 
 @media screen and (max-width: 500px) {
+  .background-landing {
+    background-image: url(../../img/main-mobile.jpg);
+  }
   .logo {
     width: 2.8rem;
   }
@@ -1784,7 +1783,7 @@ nav {
   }
   .banner-container {
     height: 88vh;
-    padding: 10% 0 0 3%;
+    padding: 5% 0 0 3%;
   }
   .banner-container .banner {
     height: 10rem;
@@ -1929,6 +1928,9 @@ nav {
   .banner-mid-nosotros img {
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .container- {
+    height: 55rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -22,7 +22,6 @@ const navSlide = () => {
         navBar.classList.toggle('nav-color');
         footer.classList.toggle('footer-none');
         banner.classList.toggle('hide-banner');
-        body.classList.toggle('body-background');
         
     });
 }

@@ -14,19 +14,15 @@
 }
 
 .background-landing {
-  background-image: url(../../img/main.png);
+  background-image: url(../../img/main-desktop.jpg);
   background-size: cover;
 }
 
 .body-products {
-  background-image: url(../../img/products.jpg);
+  background-image: url(../../img/products-mate.jpg);
   background-size: cover;
   background-attachment: fixed;
   min-height: 100%;
-}
-
-.body-background {
-  background-color: $textColorPrimary;
 }
 
 video {
@@ -45,7 +41,7 @@ video {
 }
 
 .body-contact {
-  background-image: url(../../img/contact.jpg);
+  background-image: url(../../img/contact-black.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
