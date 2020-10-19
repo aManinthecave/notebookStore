@@ -55,6 +55,22 @@
   padding: 6% 0 0 3%;
 }
 
+.banner-support-container {
+  height: 50vh;
+}
+
+.banner-support {
+  padding: 0 2% 0 2% ;
+  div {
+    display: flex;
+    justify-content: center;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
 .banner-container-contact {
   @include banner(20vh);
   justify-content: center;
@@ -77,11 +93,16 @@
   font-family: $quicksand;
   color: $textColorSecondary;
 }
+.h2-support {
+  font-family: $quicksand;
+  @include h1(1rem);
+  color: $textColorSecondary;
+} 
 
 .p-products {
   font-family: $quicksand;
   @include h1(1.3rem);
-  color: $textColorSecondary; 
+  color: #d45079; 
 }
 
 .p-landing {
@@ -183,6 +204,18 @@
   p {
     font-size: 1.2rem;
     opacity: 0.5;
+  }
+}
+
+.intro-support {
+  opacity: 1;
+  h3 {
+    color: $textColorSecondary;
+    opacity: 1;
+  }
+  p {
+    color: $textColorSecondary;
+    opacity: 1;
   }
 }
 

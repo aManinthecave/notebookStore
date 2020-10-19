@@ -181,6 +181,29 @@
     }
   }
 
+  .banner-support-container {
+    height: 20vh;
+  }
+  
+  .banner-support {
+    div {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+      button {
+        width: 70%;
+        padding: 0 2% 0 2%;
+        a {
+          font-size: 0.6rem;
+        }
+      }
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
   .subscribe-button-container {
     padding: 35% 0 3% 3%;
   }
@@ -236,6 +259,16 @@
     }
     p {
       font-size: 1rem;
+    }
+  }
+
+  .intro-content-support {
+    margin-top: 20px;
+    height: 32rem;
+    padding: 0 2% 0 0;
+    img {
+      margin-top: 30px;
+      width: 60%;
     }
   }
 

@@ -4,7 +4,10 @@ const navSlide = () => {
     const navLinks = document.querySelectorAll('.nav-links li');
     const navBar = document.querySelector('nav');    
     const footer = document.querySelector('footer')
-    const banner = document.querySelector('.banner-container');
+    const intro = document.querySelector('.intro');
+    const banner = document.querySelector('.banner-container-products');
+    const body = document.querySelector('body');
+    const supportBanner = document.querySelector('.banner-support')
 
     burger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
@@ -20,32 +23,12 @@ const navSlide = () => {
         burger.classList.toggle('toggle');
         navBar.classList.toggle('nav-color');
         footer.classList.toggle('footer-none');
+        intro.classList.toggle('hide-banner');
         banner.classList.toggle('hide-banner');
+        supportBanner.classList.toggle('hide-banner');
+        body.classList.toggle('body-background');
         
     });
 }
 
 navSlide();
-
-const text = ['Potenciá', 'tu futuro.', '']
-let count = 0;
-let index = 0;
-let currentText = '';
-let letter = '';
-
-(function type(){
-
-    if(count === text.length){
-        count = 0;
-    }
-    currentText = text[count];
-    letter = currentText.slice(0, ++index);
-
-    document.querySelector('.typing').textContent = letter;
-    if(letter.length === currentText.length) {
-        count++;
-        index = 0;
-    }
-    setTimeout(type, 200);
-
-}())

@@ -9,13 +9,15 @@
   font-family: "Montserrat";
 }
 
-.landing {
-  min-height: 100%;
-}
-
 .background-landing {
+  background-color: #303030;
   background-image: url(../../img/main-desktop.jpg);
   background-size: cover;
+}
+
+.landing {
+  min-height: 100%;
+  background-color: #303030;
 }
 
 .body-products {
@@ -23,6 +25,10 @@
   background-size: cover;
   background-attachment: fixed;
   min-height: 100%;
+}
+
+.body-support {
+  background-color: #303030;
 }
 
 video {
